@@ -1,0 +1,43 @@
+.login-container {              /*edita todo o container da div*/
+    height: 100%;               /*define uma altura de 100% da pagina*/
+    display: flex;              /*o modelo de estrutura sera flex*/
+    justify-content: center;    /*vai alinhar os elementos horizontalmente*/
+    align-items: center;        /*vai alinhar os elementos*/
+}
+
+.login-container form {         /*editando todo o corpo do formulario*/
+    width: 100%;                /*largura em 100% mas..*/
+    max-width: 300px;           /*com largura maxima de 300px  (hack para responsividade)*/
+    display: flex;              /*o modelo de estrutura sera flex*/
+    flex-direction: column;     /*alinhando os itens em coluna*/
+}
+
+.login-container form input {   /*editando só a barra do input*/
+    margin-top: 20px;           /*criando um espaco entre o topo do input e a imagem*/
+    border: 1px solid #ddd;   /*configurando a borda padrao do input*/
+    border-radius: 4px;         /*arredonda as pontas da barra do input*/
+    height: 48px;               /*deixando a barra com mais altura*/
+    padding: 0 20px;            /*espaco interno das letras no corpo da barra*/
+    font-size: 16px;            /*tamanho das letras*/
+    color: #666;              /*cor da letra*/
+}
+
+.login-container form input::placeholder {  /*enquanto o texto nao for editado se mantera mais claro*/
+    color: #999 ;             /*cor mantida enquanto isso*/
+}
+
+.login-container form button {  /*editando o botao*/
+    margin-top: 10px;           /*distanciando o topo do botam do input*/
+    border: 0px;                /*retira a borda padrao*/
+    border-radius: 4px;         /*arredonda as pontas da barra do botao*/
+    height: 48px;               /*deixa o botao mais alto*/
+    color: #fff;              /*cor da letra*/
+    background: #DF4723;      /*cor do botao*/
+    font-weight: bold;          /*muda a letra para negrito*/
+    font-size: 16px;            /*tamanho da letra*/
+    cursor: pointer;            /*trasforma o cursor quando posto sobre o botao*/
+}
+
+.login-container form button:hover {        /*muda a bor do botam quando o cursor for posto sobre ele*/
+    background: rgba(223, 70, 35, 0.918); /*a cor da mudanca*/
+}
